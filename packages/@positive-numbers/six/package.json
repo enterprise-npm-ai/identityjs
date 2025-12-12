@@ -1,0 +1,23 @@
+{
+  "name": "@positive-numbers/six",
+  "version": "1.0.0",
+  "description": "The number 6 exported as an npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "number",
+    "positive",
+    "6",
+    "six"
+  ],
+  "author": "tj-commits",
+  "license": "ISC",
+  "dependencies": {
+    "integer-value-positive-six": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

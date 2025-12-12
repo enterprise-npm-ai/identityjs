@@ -1,0 +1,13 @@
+{
+  "name": "@lowercase-letters/f",
+  "version": "2.0.0",
+  "description": "A package that exports the lowercase letter f",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "letter-f": "^1.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@lowercase-letters/i",
+  "version": "2.0.0",
+  "description": "A package that exports the lowercase letter i",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "letter-i": "^1.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@positive-numbers/zero",
+  "version": "1.0.0",
+  "description": "The number 0 exported as an npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "number",
+    "positive",
+    "0",
+    "zero"
+  ],
+  "author": "tj-commits",
+  "license": "ISC",
+  "dependencies": {
+    "number-zero": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

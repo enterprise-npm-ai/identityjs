@@ -1,0 +1,23 @@
+{
+  "name": "@positive-numbers/sixteen",
+  "version": "1.0.0",
+  "description": "The number 16 exported as an npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "number",
+    "positive",
+    "16",
+    "sixteen"
+  ],
+  "author": "tj-commits",
+  "license": "ISC",
+  "dependencies": {
+    "sixteen-constant": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

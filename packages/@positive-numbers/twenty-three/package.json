@@ -1,0 +1,23 @@
+{
+  "name": "@positive-numbers/twenty-three",
+  "version": "1.0.0",
+  "description": "The number 23 exported as an npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "number",
+    "positive",
+    "23",
+    "twenty-three"
+  ],
+  "author": "tj-commits",
+  "license": "ISC",
+  "dependencies": {
+    "twenty-three-tools": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
