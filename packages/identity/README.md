@@ -42,7 +42,7 @@ Clone this repository, cd into `packages/identity` and install dependencies and 
 
 ### Running Tests
 
-Execute the test suite :
+Execute the test suite:
 
 ```
 npm test
