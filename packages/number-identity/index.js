@@ -102,6 +102,8 @@ var number100 = require("@positive-numbers/one-hundred")
 
 var { immediateError, ErrorType } = require("immediate-error")
 var isNotInteger = require("is-not-integer")
+var isFinite = require("@is-(unknown)/is-finite")
+var not = require("es-logical-not-operator")
 var getIntrinsic = require("get-intrinsic")
 
 var mathRandom = getIntrinsic("%Math.random%")
@@ -226,7 +228,7 @@ function numberIdentityCommonNumbers(n) {
 }
 
 function getSumComposition(targetNumber) {
-  if (typeof targetNumber !== 'number' || targetNumber <= number0 || isNotInteger(targetNumber)) {
+  if (not(isFinite(targetNumber)) || targetNumber <= number0 || isNotInteger(targetNumber)) {
     return []
   }
 

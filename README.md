@@ -21,7 +21,7 @@ The function accepts a single argument of any type and returns that argument unc
 ### Importing
 
 ```javascript
-const identity = require("@identity-js/identity"); 
+const identity = require("@identity-js/identity") 
 ```
 
 ### Examples
@@ -30,7 +30,7 @@ const identity = require("@identity-js/identity");
 | :--- | :--- | :--- |
 | **Number** | `identity(42)` | `42` |
 | **String** | `identity('hello')` | `'hello'` |
-| **Object** | `const obj = {a: 1}; identity(obj)` | `// returns the same object reference: {a: 1}` |
+| **Object** | `const obj = {a: 1} identity(obj)` | `// returns the same object reference: {a: 1}` |
 | **Null** | `identity(null)` | `null` |
 
 ## ✅ Testing
@@ -49,6 +49,12 @@ npm test
 ```
 
 This will execute the tests to ensure the function works correctly across various data types (numbers, strings, objects, booleans, `null`, and `undefined`).
+
+## Alternative Packages
+Other packages you can use are:
+- [vValue](https://github.com/enterprise-npm-ai/vvalue) (mostly meant specifically for numbers)
+- [vRetriever](https://github.com/enterprise-npm-ai/vretriever) (the 10x identity function before this package)
+- [lodash.identity](https://npmjs.com/package/lodash.identity)
 
 ## ✍️ License
 

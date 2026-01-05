@@ -1,6 +1,6 @@
 {
   "name": "@identity-js/number-identity",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Returns the number passed into the function.",
   "keywords": [
     "number",
@@ -8,13 +8,13 @@
     "is",
     "idk"
   ],
-  "homepage": "https://github.com/10xEngineersQualityProgramming/identity#readme",
+  "homepage": "https://github.com/enterprise-npm-ai/identityjs#readme",
   "bugs": {
-    "url": "https://github.com/10xEngineersQualityProgramming/identity/issues"
+    "url": "https://github.com/enterprise-npm-ai/identityjs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/10xEngineersQualityProgramming/identity.git"
+    "url": "git+https://github.com/enterprise-npm-ai/identityjs.git"
   },
   "license": "Unlicense",
   "author": "me",
@@ -24,6 +24,7 @@
     "test": "mocha test/index.js"
   },
   "dependencies": {
+    "@is-(unknown)/is-finite": "^1.0.0",
     "@positive-numbers/eight": "^1.0.0",
     "@positive-numbers/eighteen": "^1.0.0",
     "@positive-numbers/eighty": "^1.0.0",
@@ -125,6 +126,7 @@
     "@positive-numbers/twenty-two": "^1.0.0",
     "@positive-numbers/two": "^1.0.0",
     "@positive-numbers/zero": "^1.0.0",
+    "es-logical-not-operator": "^1.0.0",
     "get-intrinsic": "^1.3.0",
     "immediate-error": "^6.2.0",
     "is-not-integer": "^1.0.2"

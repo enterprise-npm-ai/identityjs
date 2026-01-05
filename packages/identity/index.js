@@ -9,11 +9,13 @@ var immo = require("@_immo/return")
 var isuseless = require("is-useless").isuseless
 var falsevalue = require("false-value")()
 var identityfunction = require("identity-function")
+var isFinite = require("@is-(unknown)/is-finite")
+var isString = require("@is-(unknown)/is-string")
 
 function identityCore(value) {
-  if (typeof value === "string") {
+  if (isString(value)) {
     return stringIdentity(value)
-  } else if (typeof value === "number" || Number.isFinite(value)) {
+  } else if (isFinite(value)) {
     var result = numberIdentity(value)
     if (result === 0 && value !== 0) {
       return value

@@ -34,4 +34,14 @@ describe('identity()', () => {
     const input = undefined
     assert.strictEqual(identity(input), undefined, 'The function should return undefined.')
   })
+
+  it('should return NaN when NaN is passed in', () => {
+    const input = NaN
+    assert.isNaN(identity(input), "The function should return NaN")
+  })
+
+  it('should return Infinity when Infinity is passed in', () => {
+    const input = Infinity
+    assert.strictEqual(identity(input), Infinity, "The function should return infinity")
+  })
 })

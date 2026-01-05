@@ -26,19 +26,25 @@ yarn add @identity-js/number-identity
 const numberIdentity = require('@identity-js/number-identity')
 
 // Returns: 59
-const result1 = stringIdentity(59)
+const result1 = numberIdentity(59)
 
 // Returns: 5000
-const result2 = stringIdentity(5000)
+const result2 = numberIdentity(5000)
 
 // Returns: 0.3
-const result3 = stringIdentity(0.3)
+const result3 = numberIdentity(0.3)
 
 // Returns: -67
-const result4 = stringIdentity(-67)
+const result4 = numberIdentity(-67)
 
 // Returns: 0 (this function returns 0 for anything that isn't a finite number)
-const result5 = stringIdentity("not a number")
+const result5 = numberIdentity("not a number")
+
+// Returns: 0
+const result6 = numberIdentity(NaN)
+
+// Returns: 0
+const result7 = numberIdentity(Infinity)
 ```
 
 ## Testing
