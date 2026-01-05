@@ -31,7 +31,7 @@ const result1 = numberIdentity(59)
 // Returns: 5000
 const result2 = numberIdentity(5000)
 
-// Returns: 0.3
+// Returns: 0 (this function returns 0 for anything that isn't an integer)
 const result3 = numberIdentity(0.3)
 
 // Returns: -67

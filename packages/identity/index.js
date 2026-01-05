@@ -1,11 +1,9 @@
 var stringIdentity = require("@identity-js/string-identity")
 var numberIdentity = require("@identity-js/number-identity")
 var lodashIdentity = require("lodash.identity")
-var vValue = require("vvalue")
 var fIdentity = require("@f/identity")
 var stdlibIdentity = require("@stdlib/utils-identity-function")
 var vretriever = require("vretriever")
-var immo = require("@_immo/return")
 var isuseless = require("is-useless").isuseless
 var falsevalue = require("false-value")()
 var identityfunction = require("identity-function")
@@ -31,7 +29,15 @@ function identity(value) {
   if (value === null || value === undefined) {
     return value
   }
-  return identityfunction(vretriever.retrieve(immo(isuseless(stdlibIdentity(fIdentity(vValue(lodashIdentity(identityCore(value))))), falsevalue, falsevalue))))
+  return identityfunction(
+    vretriever.retrieve(
+      isuseless(
+        stdlibIdentity(fIdentity(lodashIdentity(identityCore(value)))),
+        falsevalue,
+        falsevalue
+      )
+    )
+  )
 }
 
 module.exports = identity

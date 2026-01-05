@@ -1,6 +1,6 @@
 {
   "name": "@identity-js/number-identity",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Returns the number passed into the function.",
   "keywords": [
     "number",

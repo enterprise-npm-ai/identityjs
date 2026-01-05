@@ -7,6 +7,11 @@ describe('identity()', () => {
     const input = 42
     assert.strictEqual(identity(input), 42, 'The function should return the number 42.')
   })
+
+  it('should return the same decimal that was passed in', () => {
+    const input = 3.2
+    assert.strictEqual(identity(input), 3.2, "The function should return 3.2")
+  })
   
   it('should return the same string that was passed in', () => {
     const input = 'hello world'
