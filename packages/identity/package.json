@@ -1,6 +1,6 @@
 {
   "name": "@identity-js/identity",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Returns the value passed into the function.",
   "keywords": [
     "identity-js"
@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@f/identity": "^1.1.1",
-    "@identity-js/number-identity": "^1.2.0",
-    "@identity-js/string-identity": "^1.1.0",
+    "@identity-js/number-identity": "^1.2.2",
+    "@identity-js/string-identity": "^1.1.2",
     "@is-(unknown)/is-finite": "^1.0.0",
     "@is-(unknown)/is-string": "^1.0.0",
     "@stdlib/utils-identity-function": "^0.2.2",
@@ -31,7 +31,7 @@
     "identity-function": "^1.0.0",
     "is-useless": "^1.3.4",
     "lodash.identity": "^3.0.0",
-    "vretriever": "^1.1.2"
+    "vretriever": "^1.1.3"
   },
   "devDependencies": {
     "chai": "^6.2.1",
