@@ -31,8 +31,11 @@ const result1 = stringIdentity("hello")
 // Returns: "💯"
 const result2 = stringIdentity("💯")
 
-// Returns: "E
+// Returns: "E"
 const result3 = stringIdentity("E")
+
+// Returns: "»"
+const result4 = stringIdentity("»")
 ```
 
 ## Testing

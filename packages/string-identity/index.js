@@ -385,6 +385,60 @@ var emojis = {
 	"emoji-world-map": require("emoji-world-map"), // "🗺"
 	"emoji-zero": require("emoji-zero") // "0️⃣"
 }
+
+// MISC CHARACTERS
+var character_acute_accent = require("@characters/acute-accent") // ´
+var character_ampersand = require("@characters/ampersand") // &
+var character_apostrophe = require("@characters/apostrophe") // '
+var character_asterisk = require("@characters/asterisk") // *
+var character_at_sign = require("@characters/at-sign") // @
+var character_backslash = require("@characters/backslash") // \
+var character_broken_bar = require("@characters/broken-bar") // ¦
+var character_cent_sign = require("@characters/cent-sign") // ¢
+var character_colon = require("@characters/colon") // :
+var character_comma = require("@characters/comma") // ,
+var character_copyright_sign = require("@characters/copyright-sign") // ©
+var character_degree_sign = require("@characters/degree-sign") // °
+var character_diaeresis = require("@characters/diaeresis") // ¨
+var character_division_sign = require("@characters/division-sign") // ÷
+var character_dollar_sign = require("@characters/dollar-sign") // $
+var character_exclamation_mark = require("@characters/exclamation-mark") // !
+var character_full_stop = require("@characters/full-stop") // .
+var character_grave_accent = require("@characters/grave-accent") // `
+var character_greater_than_sign = require("@characters/greater-than-sign") // >
+var character_interted_exclamation_mark = require("@characters/interted-exclamation-mark") // ¡
+var character_inverted_question_mark = require("@characters/inverted-question-mark") // ¿
+var character_left_curly_bracket = require("@characters/left-curly-bracket") // {
+var character_left_parenthesis = require("@characters/left-parenthesis") // (
+var character_left_pointing_double_angle_quotation_mark = require("@characters/left-pointing-double-angle-quotation-mark") // «
+var character_left_square_bracket = require("@characters/left-square-bracket") // [
+var character_less_than_sign = require("@characters/less-than-sign") // <
+var character_macron = require("@characters/macron") // ¯
+var character_micro_sign = require("@characters/micro-sign") // μ
+var character_middle_dot = require("@characters/middle-dot") // ·
+var character_minus_sign = require("@characters/minus-sign") // -
+var character_multiplication_sign = require("@characters/multiplication-sign") // ×
+var character_not_sign = require("@characters/not-sign") // ¬
+var character_number_sign = require("@characters/number-sign") // #
+var character_percent_sign = require("@characters/percent-sign") // %
+var character_pilcrow_sign = require("@characters/pilcrow-sign") // ¶
+var character_plus_minus_sign = require("@characters/plus-minus-sign") // ±
+var character_plus_sign = require("@characters/plus-sign") // +
+var character_pound_sign = require("@characters/pound-sign") // £
+var character_question_mark = require("@characters/question-mark") // ?
+var character_quotation_mark = require("@characters/quotation-mark") // "
+var character_registered_sign = require("@characters/registered-sign") // ®
+var character_right_curly_bracket = require("@characters/right-curly-bracket") // }
+var character_right_parenthesis = require("@characters/right-parenthesis") // )
+var character_right_pointing_double_angle_quotation_mark = require("@characters/right-pointing-double-angle-quotation-mark") // »
+var character_right_square_bracket = require("@characters/right-square-bracket") // ]
+var character_section_sign = require("@characters/section-sign") // §
+var character_semicolon = require("@characters/semicolon") // ;
+var character_slash = require("@characters/slash") // /
+var character_space = require("@characters/space") //  
+var character_tilde = require("@characters/tilde") // ~
+var character_yen_sign = require("@characters/yen-sign") // ¥
+
 function stringIdentity(str) {
 	if (!isString(str) && ($String(str) === str)) {
 		return immediateError(
@@ -718,6 +772,57 @@ function stringIdentityCommonStrings(str) {
 	if (eqstrings(str, emojis["emoji-woman-woman-girl-boy"])) return emojis["emoji-woman-woman-girl-boy"]
 	if (eqstrings(str, emojis["emoji-world-map"])) return emojis["emoji-world-map"]
 	if (eqstrings(str, emojis["emoji-zero"])) return emojis["emoji-zero"]
+	if (eqstrings(str, character_acute_accent)) return character_acute_accent
+	if (eqstrings(str, character_ampersand)) return character_ampersand
+	if (eqstrings(str, character_apostrophe)) return character_apostrophe
+	if (eqstrings(str, character_asterisk)) return character_asterisk
+	if (eqstrings(str, character_at_sign)) return character_at_sign
+	if (eqstrings(str, character_backslash)) return character_backslash
+	if (eqstrings(str, character_broken_bar)) return character_broken_bar
+	if (eqstrings(str, character_cent_sign)) return character_cent_sign
+	if (eqstrings(str, character_colon)) return character_colon
+	if (eqstrings(str, character_comma)) return character_comma
+	if (eqstrings(str, character_copyright_sign)) return character_copyright_sign
+	if (eqstrings(str, character_degree_sign)) return character_degree_sign
+	if (eqstrings(str, character_diaeresis)) return character_diaeresis
+	if (eqstrings(str, character_division_sign)) return character_division_sign
+	if (eqstrings(str, character_dollar_sign)) return character_dollar_sign
+	if (eqstrings(str, character_exclamation_mark)) return character_exclamation_mark
+	if (eqstrings(str, character_full_stop)) return character_full_stop
+	if (eqstrings(str, character_grave_accent)) return character_grave_accent
+	if (eqstrings(str, character_greater_than_sign)) return character_greater_than_sign
+	if (eqstrings(str, character_interted_exclamation_mark)) return character_interted_exclamation_mark
+	if (eqstrings(str, character_inverted_question_mark)) return character_inverted_question_mark
+	if (eqstrings(str, character_left_curly_bracket)) return character_left_curly_bracket
+	if (eqstrings(str, character_left_parenthesis)) return character_left_parenthesis
+	if (eqstrings(str, character_left_pointing_double_angle_quotation_mark)) return character_left_pointing_double_angle_quotation_mark
+	if (eqstrings(str, character_left_square_bracket)) return character_left_square_bracket
+	if (eqstrings(str, character_less_than_sign)) return character_less_than_sign
+	if (eqstrings(str, character_macron)) return character_macron
+	if (eqstrings(str, character_micro_sign)) return character_micro_sign
+	if (eqstrings(str, character_middle_dot)) return character_middle_dot
+	if (eqstrings(str, character_minus_sign)) return character_minus_sign
+	if (eqstrings(str, character_multiplication_sign)) return character_multiplication_sign
+	if (eqstrings(str, character_not_sign)) return character_not_sign
+	if (eqstrings(str, character_number_sign)) return character_number_sign
+	if (eqstrings(str, character_percent_sign)) return character_percent_sign
+	if (eqstrings(str, character_pilcrow_sign)) return character_pilcrow_sign
+	if (eqstrings(str, character_plus_minus_sign)) return character_plus_minus_sign
+	if (eqstrings(str, character_plus_sign)) return character_plus_sign
+	if (eqstrings(str, character_pound_sign)) return character_pound_sign
+	if (eqstrings(str, character_question_mark)) return character_question_mark
+	if (eqstrings(str, character_quotation_mark)) return character_quotation_mark
+	if (eqstrings(str, character_registered_sign)) return character_registered_sign
+	if (eqstrings(str, character_right_curly_bracket)) return character_right_curly_bracket
+	if (eqstrings(str, character_right_parenthesis)) return character_right_parenthesis
+	if (eqstrings(str, character_right_pointing_double_angle_quotation_mark)) return character_right_pointing_double_angle_quotation_mark
+	if (eqstrings(str, character_right_square_bracket)) return character_right_square_bracket
+	if (eqstrings(str, character_section_sign)) return character_section_sign
+	if (eqstrings(str, character_semicolon)) return character_semicolon
+	if (eqstrings(str, character_slash)) return character_slash
+	if (eqstrings(str, character_space)) return character_space
+	if (eqstrings(str, character_tilde)) return character_tilde
+	if (eqstrings(str, character_yen_sign)) return character_yen_sign
 	if (isWDS(str)) return generalConcat(uppercase_w, uppercase_d, uppercase_s)
 	immediateError("if you see this error in the console everything's broken and the world is ending. take shelter", ErrorType.BaseError)
 }

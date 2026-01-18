@@ -1255,4 +1255,210 @@ describe('stringIdentity', function () {
       assert.strictEqual(stringIdentity(''), '')
     })
   })
+
+  describe("Symbols", function () {
+    it("should return \"´\" when given \"´\"", function () {
+      assert.strictEqual(stringIdentity("´"), "´")
+    })
+
+    it("should return \"&\" when given \"&\"", function () {
+      assert.strictEqual(stringIdentity("&"), "&")
+    })
+
+    it("should return \"'\" when given \"'\"", function () {
+      assert.strictEqual(stringIdentity("'"), "'")
+    })
+
+    it("should return \"*\" when given \"*\"", function () {
+      assert.strictEqual(stringIdentity("*"), "*")
+    })
+
+    it("should return \"@\" when given \"@\"", function () {
+      assert.strictEqual(stringIdentity("@"), "@")
+    })
+
+    it("should return \"\\\" when given \"\\\"", function () {
+      assert.strictEqual(stringIdentity("\\"), "\\")
+    })
+
+    it("should return \"¦\" when given \"¦\"", function () {
+      assert.strictEqual(stringIdentity("¦"), "¦")
+    })
+
+    it("should return \"¢\" when given \"¢\"", function () {
+      assert.strictEqual(stringIdentity("¢"), "¢")
+    })
+
+    it("should return \":\" when given \":\"", function () {
+      assert.strictEqual(stringIdentity(":"), ":")
+    })
+
+    it("should return \",\" when given \",\"", function () {
+      assert.strictEqual(stringIdentity(","), ",")
+    })
+
+    it("should return \"©\" when given \"©\"", function () {
+      assert.strictEqual(stringIdentity("©"), "©")
+    })
+
+    it("should return \"°\" when given \"°\"", function () {
+      assert.strictEqual(stringIdentity("°"), "°")
+    })
+
+    it("should return \"¨\" when given \"¨\"", function () {
+      assert.strictEqual(stringIdentity("¨"), "¨")
+    })
+
+    it("should return \"÷\" when given \"÷\"", function () {
+      assert.strictEqual(stringIdentity("÷"), "÷")
+    })
+
+    it("should return \"$\" when given \"$\"", function () {
+      assert.strictEqual(stringIdentity("$"), "$")
+    })
+
+    it("should return \"!\" when given \"!\"", function () {
+      assert.strictEqual(stringIdentity("!"), "!")
+    })
+
+    it("should return \".\" when given \".\"", function () {
+      assert.strictEqual(stringIdentity("."), ".")
+    })
+
+    it("should return \"`\" when given \"`\"", function () {
+      assert.strictEqual(stringIdentity("`"), "`")
+    })
+
+    it("should return \">\" when given \">\"", function () {
+      assert.strictEqual(stringIdentity(">"), ">")
+    })
+
+    it("should return \"¡\" when given \"¡\"", function () {
+      assert.strictEqual(stringIdentity("¡"), "¡")
+    })
+
+    it("should return \"¿\" when given \"¿\"", function () {
+      assert.strictEqual(stringIdentity("¿"), "¿")
+    })
+
+    it("should return \"{\" when given \"{\"", function () {
+      assert.strictEqual(stringIdentity("{"), "{")
+    })
+
+    it("should return \"(\" when given \"(\"", function () {
+      assert.strictEqual(stringIdentity("("), "(")
+    })
+
+    it("should return \"«\" when given \"«\"", function () {
+      assert.strictEqual(stringIdentity("«"), "«")
+    })
+
+    it("should return \"[\" when given \"[\"", function () {
+      assert.strictEqual(stringIdentity("["), "[")
+    })
+
+    it("should return \"<\" when given \"<\"", function () {
+      assert.strictEqual(stringIdentity("<"), "<")
+    })
+
+    it("should return \"¯\" when given \"¯\"", function () {
+      assert.strictEqual(stringIdentity("¯"), "¯")
+    })
+
+    it("should return \"μ\" when given \"μ\"", function () {
+      assert.strictEqual(stringIdentity("μ"), "μ")
+    })
+
+    it("should return \"·\" when given \"·\"", function () {
+      assert.strictEqual(stringIdentity("·"), "·")
+    })
+
+    it("should return \"-\" when given \"-\"", function () {
+      assert.strictEqual(stringIdentity("-"), "-")
+    })
+
+    it("should return \"×\" when given \"×\"", function () {
+      assert.strictEqual(stringIdentity("×"), "×")
+    })
+
+    it("should return \"¬\" when given \"¬\"", function () {
+      assert.strictEqual(stringIdentity("¬"), "¬")
+    })
+
+    it("should return \"#\" when given \"#\"", function () {
+      assert.strictEqual(stringIdentity("#"), "#")
+    })
+
+    it("should return \"%\" when given \"%\"", function () {
+      assert.strictEqual(stringIdentity("%"), "%")
+    })
+
+    it("should return \"¶\" when given \"¶\"", function () {
+      assert.strictEqual(stringIdentity("¶"), "¶")
+    })
+
+    it("should return \"±\" when given \"±\"", function () {
+      assert.strictEqual(stringIdentity("±"), "±")
+    })
+
+    it("should return \"+\" when given \"+\"", function () {
+      assert.strictEqual(stringIdentity("+"), "+")
+    })
+
+    it("should return \"£\" when given \"£\"", function () {
+      assert.strictEqual(stringIdentity("£"), "£")
+    })
+
+    it("should return \"?\" when given \"?\"", function () {
+      assert.strictEqual(stringIdentity("?"), "?")
+    })
+
+    it("should return \"\\\"\" when given \"\\\"\"", function () {
+      assert.strictEqual(stringIdentity("\""), "\"")
+    })
+
+    it("should return \"®\" when given \"®\"", function () {
+      assert.strictEqual(stringIdentity("®"), "®")
+    })
+
+    it("should return \"}\" when given \"}\"", function () {
+      assert.strictEqual(stringIdentity("}"), "}")
+    })
+
+    it("should return \")\" when given \")\"", function () {
+      assert.strictEqual(stringIdentity(")"), ")")
+    })
+
+    it("should return \"»\" when given \"»\"", function () {
+      assert.strictEqual(stringIdentity("»"), "»")
+    })
+
+    it("should return \"]\" when given \"]\"", function () {
+      assert.strictEqual(stringIdentity("]"), "]")
+    })
+
+    it("should return \"§\" when given \"§\"", function () {
+      assert.strictEqual(stringIdentity("§"), "§")
+    })
+
+    it("should return \";\" when given \";\"", function () {
+      assert.strictEqual(stringIdentity(";"), ";")
+    })
+
+    it("should return \"/\" when given \"/\"", function () {
+      assert.strictEqual(stringIdentity("/"), "/")
+    })
+
+    it("should return \" \" when given \" \"", function () {
+      assert.strictEqual(stringIdentity(" "), " ")
+    })
+
+    it("should return \"~\" when given \"~\"", function () {
+      assert.strictEqual(stringIdentity("~"), "~")
+    })
+
+    it("should return \"¥\" when given \"¥\"", function () {
+      assert.strictEqual(stringIdentity("¥"), "¥")
+    })
+  })
 })
